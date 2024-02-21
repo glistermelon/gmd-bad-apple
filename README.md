@@ -1,7 +1,7 @@
-### AWFUL CODE WARNING!
+# AWFUL CODE WARNING!
 This was created hastily, and that is reflected in the code. Furthermore, I do not think this method of animation is the best possible method, but it was the first one I thought of that actually worked and I didn't feel like implemented something better (say, a gradient based implementation).
 
-### Building the level
+# Building the level
 Run `create_level.py` and the level should be written into a GMD file in the `product` directory. Almost certainly due to some error on my own part, this level won't actually work unless you open it in the editor and then exit and save it. The GMD file I have already placed in this repository's `product` directory does work as it is, though.
 
 # How it works
@@ -12,7 +12,7 @@ So, to generate each frame, we need to move each rectangle to a specific locatio
 
 Lastly, for each object, three sequence triggers are created. The first one moves its associated object to a specific X position, the second to a specific Y position, and the third applies a specific scale. Every sequence trigger is called with the appropriate Group ID remapping at a rate of 30 calls per second (as the video's frame rate is 30 FPS).
 
-#### Extra Details
+### Extra Details
 
 * A move trigger with target mode enabled resets the positions of all the objects for each frame.
 * Scale triggers cannot easily be "reversed". Every scale trigger shares its Group ID with a spawn trigger that waits until the next frame to call an identical scale trigger but with "div by value X" enabled, thus "reversing" the first scale.

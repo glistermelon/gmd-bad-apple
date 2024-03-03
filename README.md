@@ -1,5 +1,5 @@
 # AWFUL CODE WARNING!
-This was created hastily, and that is reflected in the code. Furthermore, I do not think this method of animation is the best possible method, but it was the first one I thought of that actually worked and I didn't feel like implemented something better (say, a gradient based implementation).
+This was created hastily, and that is reflected in the code. Furthermore, I do not think this method of animation is the best possible method, but it was the first one I thought of that actually worked and I didn't feel like implementing something better (say, a gradient based implementation).
 
 # Building the level
 Run `create_level.py` and the level should be written into a GMD file in the `product` directory. Almost certainly due to some error on my own part, this level won't actually work unless you open it in the editor and then exit and save it. The GMD file I have already placed in this repository's `product` directory does work as it is, though.
